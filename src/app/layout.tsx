@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://mitra-cake-shop.vercel.app",
+    process.env.NEXT_PUBLIC_SITE_URL || "https://mitracakeshop.vercel.app",
   ),
 
   title: "Mitra Cake Shop - Fresh & Custom Cakes in Bangladesh",
@@ -70,11 +70,11 @@ export const metadata: Metadata = {
     title: "Mitra Cake Shop - Fresh & Custom Cakes",
     description:
       "Order delicious cakes online from Mitra Cake Shop. Perfect for birthdays, weddings, and celebrations with fast delivery across Bangladesh.",
-    url: "https://mitra-cake-shop.vercel.app",
+    url: "https://mitracakeshop.vercel.app",
     siteName: "Mitra Cake Shop",
     images: [
       {
-        url: "https://mitra-cake-shop.vercel.app/og-image.jpg",
+        url: "https://mitracakeshop.vercel.app/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Mitra Cake Shop",
@@ -89,7 +89,7 @@ export const metadata: Metadata = {
     title: "Mitra Cake Shop - Online Cake Store",
     description:
       "Fresh and customized cakes for birthdays, weddings, and celebrations. Order online from Mitra Cake Shop.",
-    images: ["https://mitra-cake-shop.vercel.app/og-image.jpg"],
+    images: ["https://mitracakeshop.vercel.app/og-image.jpg"],
   },
 };
 
