@@ -4,14 +4,14 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import {
   CATEGORY_META,
-  type WatchCategorySlug,
+  type ProductCategorySlug,
   titleFromSlug,
 } from "@/utils/productCategories";
 
 type Product = {
   id: number;
   name: string;
-  category: WatchCategorySlug; // ✅ এখন slug টাইপ
+  category: ProductCategorySlug;
 };
 
 type Props = {
@@ -20,16 +20,16 @@ type Props = {
 
 export default function CategorySec({ products }: Props) {
   // ✅ categoryCounts এখন WatchCategorySlug key নেবে
-  const categoryCounts = products.reduce<Record<WatchCategorySlug, number>>(
+  const categoryCounts = products.reduce<Record<ProductCategorySlug, number>>(
     (acc, p) => {
       acc[p.category] = (acc[p.category] || 0) + 1;
       return acc;
     },
-    {} as Record<WatchCategorySlug, number>,
+    {} as Record<ProductCategorySlug, number>,
   );
 
   // ✅ keys কে WatchCategorySlug[] হিসেবে ধরছি
-  const uniqueCategories = Object.keys(categoryCounts) as WatchCategorySlug[];
+  const uniqueCategories = Object.keys(categoryCounts) as ProductCategorySlug[];
 
   return (
     <section className="py-16 max-w-7xl mx-auto">
